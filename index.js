@@ -1,9 +1,17 @@
 const katzDeliLine = [];
+var num = 0;
+// function takeANumber(katzDeliLine, name){
+//   katzDeliLine.push(name);
+//   return "Welcome, "+ name +"." + " You are number " + katzDeliLine.length +" in line.";
+// }
 
-function takeANumber(katzDeliLine, name){
-  katzDeliLine.push(name);
-  return "Welcome, "+ name +"." + " You are number " + katzDeliLine.length +" in line.";
+function takeANumber(katzDeliLine){
+num++;
+katzDeliLine.push(num);  
+return "Hi, you are number: " + num; 
+  
 }
+
 
 function nowServing(n){
   if (n.length !== 0){
